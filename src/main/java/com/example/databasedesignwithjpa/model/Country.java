@@ -20,10 +20,7 @@ public class Country {
     private String name;
     @Column(name = "continent_name")
     private String continentName;
-    @OneToOne(
-        mappedBy = "country"
-    )
-    private User user;
+
 
 
 }
