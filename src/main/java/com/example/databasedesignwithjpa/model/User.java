@@ -25,7 +25,7 @@ public class User {
     @Column(name = "date_of_birth")
     private String dateOfBirth;
     @ManyToOne(
-        cascade = CascadeType.ALL
+        cascade = CascadeType.MERGE
     )
     @JoinColumn(
             name = "country_code",

@@ -25,8 +25,8 @@ public class Product {
     private String createdAt;
 
     @ManyToOne(
-            cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY
+            cascade = CascadeType.MERGE,
+            fetch = FetchType.EAGER
     )
     @JoinColumn(
             name = "merchant_id",
