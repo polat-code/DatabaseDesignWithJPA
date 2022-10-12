@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
 
     @Autowired
-    ProductService productService;
+    private ProductService productService;
 
     @PostMapping("/product/{merchantId}")
     public Product saveProduct(@RequestBody Product product,@PathVariable Long merchantId) {

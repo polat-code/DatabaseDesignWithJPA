@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
 
     @Autowired
-    OrderService orderService;
+    private OrderService orderService;
 
     @PostMapping("/order/{userId}")
     public Order saveOrder(@RequestBody Order order, @PathVariable("userId") Long userId) {
